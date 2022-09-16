@@ -22,7 +22,7 @@ public class Combustible {
     }
 
     public void setPrecio(Double precio) {
-        this.precio = precio; //prueba desde web
+        this.precio = precio; //prueba2 desde web
     }
     
     
