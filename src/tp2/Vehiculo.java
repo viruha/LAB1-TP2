@@ -9,10 +9,10 @@ public abstract class Vehiculo {
     protected Combustible combustible;
 
     public Vehiculo(String marca, String patente, Combustible combustible) {
-    this.marca=marca;
-    this.patente=patente;
-    this.combustible=combustible;
-            }
+        this.marca = marca;
+        this.patente = patente;
+        this.combustible = combustible;
+    }
 
     public abstract double calcularCostoDeCombustible(int distancia);
 }

@@ -10,7 +10,7 @@ public class Viaje {
 
     private Vehiculo vehiculo;
 
-    private Ciudad Destino;
+    private Ciudad destino;
 
     public Viaje(Ciudad origen, Ciudad destino, int peajes, int distancia, Vehiculo vehiculo) {
     }
