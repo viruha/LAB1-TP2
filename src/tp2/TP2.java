@@ -12,6 +12,7 @@ public class TP2 {
     
         
     Vehiculo au=new Auto("chevrolet","ABC-254",nafta);
+      System.out.println("Costo de Combustible del auto por km es: $"+au.calcularCostoDeCombustible(21));
     
     Vehiculo camioneta=new Camioneta("Jeep", "BCI-870", diesel);
         System.out.println("Costo de Combustible de la camioneta por km es: $"+camioneta.calcularCostoDeCombustible(1));
