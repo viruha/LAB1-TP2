@@ -1,20 +1,28 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package tp2;
 
-/**
- *
- * @author Mauro
- */
+
 public class TP2 {
 
-    /**
-     * @param args the command line arguments
-     */
+ 
     public static void main(String[] args) {
-        // TODO code application logic here
+    
+    Combustible nafta=new Combustible("Nafta",145.3);
+    Combustible diesel=new Combustible("Diesel",152.7);
+    Combustible gas=new Combustible("Gas",90.5);
+    
+        
+    Vehiculo au=new Auto("chevrolet","ABC-254",nafta);
+      System.out.println("Costo de Combustible del auto por km es: $"+au.calcularCostoDeCombustible(1));
+    
+    Vehiculo camioneta=new Camioneta("Jeep", "BCI-870", diesel);
+        System.out.println("Costo de Combustible de la camioneta por km es: $"+camioneta.calcularCostoDeCombustible(1));
+    
+    Vehiculo camionGrande=new Camion("Kia", "JPG-12", gas);
+        System.out.println("Costo de Combustible del Camion por km es: $"+camionGrande.calcularCostoDeCombustible(1));
+        
+    
+    
+    
     }
     
 }

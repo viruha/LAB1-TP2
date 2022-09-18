@@ -7,7 +7,7 @@ public class Camioneta extends Vehiculo {
     }
 
     @Override
-    public Double calcularCostoDeCombustible(int distancia) {
-        return 0.0; //hacer metodo
+    public double calcularCostoDeCombustible(int distancia) {
+        return (Math.round((combustible.getPrecio()*0.1)*100.0)/100.0)*distancia; //hacer metodo
     }
 }

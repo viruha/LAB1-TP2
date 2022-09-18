@@ -6,7 +6,13 @@ public class Combustible {
 
     private Double precio;
 
-    public Combustible(String tipo, Double precio) {
+    public Combustible(String tipo, double precio) {
+    this.tipo=tipo;
+    this.precio=precio;
+            
+    }
+
+    public Combustible() {
     }
 
     public String getTipo() {
@@ -17,11 +23,11 @@ public class Combustible {
         this.tipo = tipo;
     }
 
-    public Double getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(Double precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
     
