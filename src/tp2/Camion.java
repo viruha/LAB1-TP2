@@ -5,6 +5,11 @@ public class Camion extends Vehiculo {
     public Camion(String marca, String patente, Combustible combustible) {
         super(marca, patente, combustible);
     }
+    
+    @Override
+    public String getTipoVehiculo(){
+    return "Camion";    
+    }
  
     @Override
     public double calcularCostoDeCombustible(int distancia) {

@@ -19,6 +19,12 @@ public class Combustible {
         return tipo;
     }
 
+    @Override
+    public String toString() {
+        return "Combustible{" + "tipo=" + tipo + ", precio=" + precio + '}';
+    }
+    
+
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
