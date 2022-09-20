@@ -8,8 +8,13 @@ public class Ciudad {
 
     private String nombre;
 
-    public Ciudad(String nombre, String ruta, int kmRuta) {
+    public Ciudad(String nombre, int kmRuta, String ruta) {
+        this.ruta = ruta;
+        this.kmRuta = kmRuta;
+        this.nombre = nombre;
     }
+
+
 
     //Agregado por Germán 18/09/22
     public void setRuta(String ruta) {
@@ -23,6 +28,16 @@ public class Ciudad {
     public int getKmRuta() {
         return kmRuta;
     }
+
+    public void setKmRuta(int kmRuta) {
+        this.kmRuta = kmRuta;
+    }
+
+    @Override
+    public String toString() {
+        return "Ciudad: " + "ruta=" + ruta + ", kmRuta=" + kmRuta + ", nombre=" + nombre;
+    }
+    
     
     
     

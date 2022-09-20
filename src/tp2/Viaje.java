@@ -27,15 +27,12 @@ public class Viaje {
     this.destino=destino;
     this.peajes=peajes;
     this.vehiculo=vehiculo;
-    this.distancia=calculoDistancia();
     }
 
-    public final int calculoDistancia() {
-        if(!(origen.getRuta().equals(destino.getRuta()))){
-            return distancia;}
-            else{
-            return abs(origen.getKmRuta()-destino.getKmRuta());
-                    }
+    public void calculoDistancia() {
+        if((origen.getRuta().equals(destino.getRuta()))){
+            distancia = abs(origen.getKmRuta()-destino.getKmRuta());
+        }
         }
     
     public double calculoCostoPeajes() {
@@ -56,11 +53,11 @@ public class Viaje {
     }
 
     public Double calculoCostoCombustible() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return vehiculo.calcularCostoDeCombustible(distancia);
     }
 
     public Double calculoCostoTotal() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return 0.0;
     }
 
     public int getDistancia() {
@@ -104,5 +101,11 @@ public class Viaje {
     public void setDestino(Ciudad destino) {
         this.destino = destino;
     }
+
+    @Override
+    public String toString() {
+        return "Viaje: " + "distancia=" + distancia + ", peajes=" + peajes;
+    }
+    
     
 }
