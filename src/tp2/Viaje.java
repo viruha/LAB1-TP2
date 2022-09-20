@@ -8,33 +8,33 @@ public class Viaje {
 
     private int peajes;
 
-    private Ciudad Origen;
+    private Ciudad origen;
 
     private Vehiculo vehiculo;
 
     private Ciudad destino;
 
     public Viaje(Ciudad origen, Ciudad destino, int peajes, int distancia, Vehiculo vehiculo) {
-        this.Origen=origen;
-        this.Destino=destino;
+        this.origen=origen;
+        this.destino=destino;
         this.peajes=peajes;
         this.distancia=distancia;
         this.vehiculo=vehiculo;
     }
 
     public Viaje(Ciudad origen, Ciudad destino, int peajes, Vehiculo vehiculo) {
-    this.Origen=origen;
-    this.Destino=destino;
+    this.origen=origen;
+    this.destino=destino;
     this.peajes=peajes;
     this.vehiculo=vehiculo;
     this.distancia=calculoDistancia();
     }
 
     public final int calculoDistancia() {
-        if(!(Origen.getRuta().equals(Destino.getRuta()))){
+        if(!(origen.getRuta().equals(destino.getRuta()))){
             return distancia;}
             else{
-            return abs(Origen.getKmRuta()-Destino.getKmRuta());
+            return abs(origen.getKmRuta()-destino.getKmRuta());
                     }
         }
     

@@ -19,5 +19,11 @@ public class Ciudad {
     public String getRuta() {
         return ruta;
     }
+
+    public int getKmRuta() {
+        return kmRuta;
+    }
+    
+    
     
 }
