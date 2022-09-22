@@ -53,11 +53,11 @@ public class Viaje {
     }
 
     public Double calculoCostoCombustible() {
-        return vehiculo.calcularCostoDeCombustible(distancia);
+        return (Math.round(vehiculo.calcularCostoDeCombustible(distancia)*100.0)/100.0);
     }
 
     public Double calculoCostoTotal() {
-        return 0.0;
+        return (Math.round((calculoCostoPeajes()+calculoCostoCombustible())*100.0)/100.0);
     }
 
     public int getDistancia() {
@@ -104,7 +104,7 @@ public class Viaje {
 
     @Override
     public String toString() {
-        return "Viaje: " + "distancia=" + distancia + ", peajes=" + peajes;
+        return "Viaje --->" + "{Distancia: " + distancia + ", Peajes: " + peajes+"}";
     }
     
     

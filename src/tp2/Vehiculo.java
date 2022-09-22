@@ -14,6 +14,7 @@ public abstract class Vehiculo {
         this.combustible = combustible;
     }
 
+
     public String getMarca() {
         return marca;
     }
@@ -36,7 +37,7 @@ public abstract class Vehiculo {
 
     @Override
     public String toString() {
-        return "Vehiculo: {" + "marca=" + marca + ", patente=" + patente + ", combustible=" + combustible + '}';
+        return "----> (Marca: " + marca + ", Patente: " + patente + ", Combustible: " + combustible+")";
     }
     
 

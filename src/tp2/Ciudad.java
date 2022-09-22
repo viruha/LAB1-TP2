@@ -35,7 +35,7 @@ public class Ciudad {
 
     @Override
     public String toString() {
-        return "Ciudad: " + "ruta=" + ruta + ", kmRuta=" + kmRuta + ", nombre=" + nombre;
+        return "--->"+nombre + "(Ruta:" + ruta + "- Km Ruta: "+kmRuta+")";
     }
     
     
