@@ -27,7 +27,7 @@ public class TP2 {
         viajeProgramado1.setPeajes(sc.nextInt());
         
         //Elección de vehículo
-        SeleccionVehiculo(viajeProgramado1);
+        seleccionVehiculo(viajeProgramado1);
        
         System.out.println(viajeProgramado1.toString());//Datos del viaje
         
@@ -48,7 +48,7 @@ public class TP2 {
     }
     
  //funcion crear vehiculo   
-public static void SeleccionVehiculo(Viaje viaje){
+public static void seleccionVehiculo(Viaje viaje){
     
     
     System.out.println("Ingrese Tipo Vehiculo con el que va a realizar el viaje");
